@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div id="root">
+    <h1>그린컴퓨터아트하구언 3층 자판기</h1>
+    <div>
+      <h2>밀키스가격</h2>
+      <p class="mlikiss">900</p>
+    </div>
+    <div>
+      <h2>코카콜라가격</h2>
+      <p class="coke">2800</p>
+
+    </div>
+    <div>
+      <h2>원장님조르기</h2>
+      <p>0</p>
+
+    </div>
+  </div>
+
+  <script>
+
+ 
+
+
+    let root = document.getElementById('root');
+    root.children[1].children[1]
+    console.log( root.children[1].children[1]);
+    let mlikiss = document.getElementsByClassName('mlikiss');
+    console.log( root.children[1].children[1].innerText);
+    console.log( root.children[2].children[1].innerText);
+    let a = 0 ,b = 0;
+ a = Number(root.children[1].children[1].innerText);
+    b = Number(root.children[2].children[1].innerText);
+  
+    sum = a + b;
+
+    console.log(sum);
+ 
+  </script>
+
+</body>
+
+</html>
