@@ -37,11 +37,12 @@
     root.children[1].children[1]
     console.log(root.children[1].children[1]);
     let mlikiss = document.getElementsByClassName('mlikiss');
-    console.log(root.children[1].children[1].innerText);
+    console.log(root.children[1].children[1].textContent);
     console.log(root.children[2].children[1].innerText);
+    console.log(root.children[1].children[1].textContent - root.children[2].children[1].textContent)
     let a = 0, b = 0;
-    a = Number(root.children[1].children[1].innerText);
-    b = Number(root.children[2].children[1].innerText);
+    a = Number(root.children[1].children[1].textContent);
+    b = Number(root.children[2].children[1].textContent);
     var every = root.childNodes;
     let test = root.parentNode;
     var two = root.nextSibling;
@@ -57,20 +58,50 @@
     console.log(sum);
     console.log(c);
 
+    list = { "밀키스": 900, "콜라": 2900, "원장님조르기": 0 }
+    list_test = [900, 2800, 1300, 5000];
 
-list = { "밀키스" : 900, "콜라" : 2900, "원장님조르기" : 0}
+    m = list["밀키스"] - list["콜라"];
 
-m = list["밀키스"] - list["콜라"];
+    let max = 0,   msum = 0,csum = 0;
+
+    console.log(m);
+
+    let meun = 8000 , card = 2500;
+    for (let i = 0; i < 21; i++) {
+
+      msum += meun;
+      csum += card;
+    }
+  
+    console.log(msum + csum);
 
 
 
-console.log(m);
 
-for(let i = 0; i<list.length;i++){
-  console.log(list)
-}
+    for (let i = 0; i < list_test.length; i++) {
+
+      max += list_test[i];
+
+      console.log(max);
+    }
+
+    var aa = 1;
+
+    var bb = "string";
+
+    var cc = {
+      key: "value"
+
+      , name: "예준"
+
+    }
+    console.log(cc.name);
+
+    var d = [1, 2, 3, 4, 5]
 
 
+    console.log(d[1]);
 
   </script>
 
