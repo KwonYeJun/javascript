@@ -30,23 +30,48 @@
 
   <script>
 
- 
+
 
 
     let root = document.getElementById('root');
     root.children[1].children[1]
-    console.log( root.children[1].children[1]);
+    console.log(root.children[1].children[1]);
     let mlikiss = document.getElementsByClassName('mlikiss');
-    console.log( root.children[1].children[1].innerText);
-    console.log( root.children[2].children[1].innerText);
-    let a = 0 ,b = 0;
- a = Number(root.children[1].children[1].innerText);
+    console.log(root.children[1].children[1].innerText);
+    console.log(root.children[2].children[1].innerText);
+    let a = 0, b = 0;
+    a = Number(root.children[1].children[1].innerText);
     b = Number(root.children[2].children[1].innerText);
-  
-    sum = a + b;
+    var every = root.childNodes;
+    let test = root.parentNode;
+    var two = root.nextSibling;
+    var one = root.previousSibling;
 
+    console.log(one);
+    console.log(two);
+    console.log(test);
+    console.log(every)
+
+    sum = a + b;
+    c = Math.abs(a - b);
     console.log(sum);
- 
+    console.log(c);
+
+
+list = { "밀키스" : 900, "콜라" : 2900, "원장님조르기" : 0}
+
+m = list["밀키스"] - list["콜라"];
+
+
+
+console.log(m);
+
+for(let i = 0; i<list.length;i++){
+  console.log(list)
+}
+
+
+
   </script>
 
 </body>
